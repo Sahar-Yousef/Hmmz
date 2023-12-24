@@ -12,6 +12,8 @@
 		189ED9B12B381B820054E627 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189ED9B02B381B820054E627 /* Item.swift */; };
 		189ED9B32B381B820054E627 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189ED9B22B381B820054E627 /* Assets.xcassets */; };
 		189ED9B62B381B820054E627 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189ED9B52B381B820054E627 /* Preview Assets.xcassets */; };
+		18DFA6BD2B382A920037E83D /* Drafts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DFA6BC2B382A920037E83D /* Drafts.swift */; };
+		18DFA6BF2B382ABB0037E83D /* CountIntervals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DFA6BE2B382ABB0037E83D /* CountIntervals.swift */; };
 		2867ABBC2B382188002D7313 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2867ABBB2B382188002D7313 /* Timer.swift */; };
 		2867ABBE2B3821D3002D7313 /* Memo Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2867ABBD2B3821D3002D7313 /* Memo Preview.swift */; };
 		35D0E8242B38248200D46430 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D0E8232B38248200D46430 /* Setting.swift */; };
@@ -24,6 +26,8 @@
 		189ED9B02B381B820054E627 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		189ED9B22B381B820054E627 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		189ED9B52B381B820054E627 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		18DFA6BC2B382A920037E83D /* Drafts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drafts.swift; sourceTree = "<group>"; };
+		18DFA6BE2B382ABB0037E83D /* CountIntervals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountIntervals.swift; sourceTree = "<group>"; };
 		2867ABBB2B382188002D7313 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		2867ABBD2B3821D3002D7313 /* Memo Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Memo Preview.swift"; sourceTree = "<group>"; };
 		35D0E8232B38248200D46430 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
@@ -43,7 +47,6 @@
 		189ED9A02B381B820054E627 = {
 			isa = PBXGroup;
 			children = (
-				2867ABBB2B382188002D7313 /* Timer.swift */,
 				189ED9AB2B381B820054E627 /* Hmmz */,
 				189ED9AA2B381B820054E627 /* Products */,
 			);
@@ -60,6 +63,8 @@
 		189ED9AB2B381B820054E627 /* Hmmz */ = {
 			isa = PBXGroup;
 			children = (
+				18DFA6BB2B382A430037E83D /* Data */,
+				2867ABBB2B382188002D7313 /* Timer.swift */,
 				189ED9AC2B381B820054E627 /* HmmzApp.swift */,
 				189ED9AE2B381B820054E627 /* Home.swift */,
 				189ED9B02B381B820054E627 /* Item.swift */,
@@ -77,6 +82,15 @@
 				189ED9B52B381B820054E627 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		18DFA6BB2B382A430037E83D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				18DFA6BC2B382A920037E83D /* Drafts.swift */,
+				18DFA6BE2B382ABB0037E83D /* CountIntervals.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +163,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18DFA6BF2B382ABB0037E83D /* CountIntervals.swift in Sources */,
 				189ED9AF2B381B820054E627 /* Home.swift in Sources */,
 				189ED9B12B381B820054E627 /* Item.swift in Sources */,
 				2867ABBC2B382188002D7313 /* Timer.swift in Sources */,
+				18DFA6BD2B382A920037E83D /* Drafts.swift in Sources */,
 				2867ABBE2B3821D3002D7313 /* Memo Preview.swift in Sources */,
 				35D0E8242B38248200D46430 /* Setting.swift in Sources */,
 				189ED9AD2B381B820054E627 /* HmmzApp.swift in Sources */,

@@ -12,11 +12,8 @@
 		189ED9B12B381B820054E627 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189ED9B02B381B820054E627 /* Item.swift */; };
 		189ED9B32B381B820054E627 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189ED9B22B381B820054E627 /* Assets.xcassets */; };
 		189ED9B62B381B820054E627 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189ED9B52B381B820054E627 /* Preview Assets.xcassets */; };
-		189ED9C02B381C690054E627 /* Pic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189ED9BD2B381C690054E627 /* Pic.swift */; };
-		189ED9C12B381C690054E627 /* Drafts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189ED9BE2B381C690054E627 /* Drafts.swift */; };
-		189ED9C22B381C690054E627 /* CountIntervals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189ED9BF2B381C690054E627 /* CountIntervals.swift */; };
-		189ED9C42B381C760054E627 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189ED9C32B381C760054E627 /* CameraController.swift */; };
-		189ED9C62B381CB90054E627 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 189ED9C52B381CB90054E627 /* Info.plist */; };
+		189ED9D02B381E7A0054E627 /* Drafts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189ED9CF2B381E7A0054E627 /* Drafts.swift */; };
+		189ED9D22B381EBA0054E627 /* CountIntervals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189ED9D12B381EBA0054E627 /* CountIntervals.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,11 +23,8 @@
 		189ED9B02B381B820054E627 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		189ED9B22B381B820054E627 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		189ED9B52B381B820054E627 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		189ED9BD2B381C690054E627 /* Pic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pic.swift; sourceTree = "<group>"; };
-		189ED9BE2B381C690054E627 /* Drafts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drafts.swift; sourceTree = "<group>"; };
-		189ED9BF2B381C690054E627 /* CountIntervals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountIntervals.swift; sourceTree = "<group>"; };
-		189ED9C32B381C760054E627 /* CameraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraController.swift; path = "../../../../Desktop/Hmmz 2/Hmmz/CameraController.swift"; sourceTree = "<group>"; };
-		189ED9C52B381CB90054E627 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		189ED9CF2B381E7A0054E627 /* Drafts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Drafts.swift; path = ../../../../Documents/Drafts.swift; sourceTree = "<group>"; };
+		189ED9D12B381EBA0054E627 /* CountIntervals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CountIntervals.swift; path = ../../../../Documents/CountIntervals.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +61,6 @@
 				189ED9AC2B381B820054E627 /* HmmzApp.swift */,
 				189ED9AE2B381B820054E627 /* ContentView.swift */,
 				189ED9B02B381B820054E627 /* Item.swift */,
-				189ED9C32B381C760054E627 /* CameraController.swift */,
 				189ED9B22B381B820054E627 /* Assets.xcassets */,
 				189ED9B42B381B820054E627 /* Preview Content */,
 			);
@@ -85,10 +78,8 @@
 		189ED9BC2B381C690054E627 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				189ED9BD2B381C690054E627 /* Pic.swift */,
-				189ED9BE2B381C690054E627 /* Drafts.swift */,
-				189ED9BF2B381C690054E627 /* CountIntervals.swift */,
-				189ED9C52B381CB90054E627 /* Info.plist */,
+				189ED9CF2B381E7A0054E627 /* Drafts.swift */,
+				189ED9D12B381EBA0054E627 /* CountIntervals.swift */,
 			);
 			name = Data;
 			path = "../../../../Desktop/Hmmz 2/Hmmz/Data";
@@ -154,7 +145,6 @@
 			files = (
 				189ED9B62B381B820054E627 /* Preview Assets.xcassets in Resources */,
 				189ED9B32B381B820054E627 /* Assets.xcassets in Resources */,
-				189ED9C62B381CB90054E627 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,12 +155,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				189ED9C02B381C690054E627 /* Pic.swift in Sources */,
 				189ED9AF2B381B820054E627 /* ContentView.swift in Sources */,
-				189ED9C42B381C760054E627 /* CameraController.swift in Sources */,
-				189ED9C22B381C690054E627 /* CountIntervals.swift in Sources */,
 				189ED9B12B381B820054E627 /* Item.swift in Sources */,
-				189ED9C12B381C690054E627 /* Drafts.swift in Sources */,
+				189ED9D22B381EBA0054E627 /* CountIntervals.swift in Sources */,
+				189ED9D02B381E7A0054E627 /* Drafts.swift in Sources */,
 				189ED9AD2B381B820054E627 /* HmmzApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

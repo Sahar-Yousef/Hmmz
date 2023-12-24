@@ -10,38 +10,24 @@ import SwiftData
 
 struct ContentView: View  {
     @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
+ //   @Query private var items: [Item]
     @Query private var drafts: [Drafts]
     @Query private var countintervals: [CountIntervals]
 
     @State private var entredtext: String = ""
     @State private var Count: Int = 0
-
     @State private var CountText: String = ""
 
     var body: some View {
-        
-        
-       
-        
+
     
         NavigationSplitView {
             List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-                    }
-                }
-                .onDelete(perform: deleteItems)
-            }
-            List {
                 ForEach(drafts) { draft in
                     NavigationLink {
-                        Text("\(draft.draft))")
+                        Text("\(draft.drafts))")
                     } label: {
-                        Text("\(draft.draft))")
+                        Text("\(draft.drafts))")
                     }
                 }
                 .onDelete(perform: deleteItems)
@@ -87,7 +73,7 @@ struct ContentView: View  {
     private func addItem() {
         withAnimation {
             let newItem = Item(timestamp: Date())
-            let newNote = Drafts(timestamp: Date(), draft: entredtext)
+            let newNote = Drafts(timestamp: Date(), drafts: entredtext)
             let newCount = CountIntervals(timestamp: Date(), countIntervals: Count)
             modelContext.insert(newItem)
             modelContext.insert(newNote)
@@ -98,7 +84,7 @@ struct ContentView: View  {
     private func deleteItems(offsets: IndexSet) {
         withAnimation {
             for index in offsets {
-                modelContext.delete(items[index])
+               // modelContext.delete(items[index])
             }
         }
     }

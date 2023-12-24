@@ -33,7 +33,7 @@ struct CreateEntry: View {
                     .pickerStyle(SegmentedPickerStyle())
                     
                     TextEditor(text: $desc)
-                        .foregroundColor(.black)
+                       // .foregroundColor(.black)
                         .frame(height: 200)
                 }
                     Section {

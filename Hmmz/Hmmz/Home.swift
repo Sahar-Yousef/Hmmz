@@ -20,26 +20,29 @@ struct Home: View {
                             NavigationLink(destination:NoteGallery()) {
                                 Image(systemName:"calendar")
                             }
-                                .font(Font.custom("SF Pro Display", size: 30))
-                                .foregroundColor(Color(red: 0.17, green: 0.26, blue: 0.36))
-                                .offset(x: -160.50, y: -352.50)
-                                .accessibilityLabel("Go to Calendar")
+                            .font(Font.custom("SF Pro Display", size: 30))
+                            .foregroundColor(.blue11)
+                            .offset(x: -160.50, y: -352.50)
+                            .accessibilityLabel("Go to Calendar")
                             NavigationLink(destination: Setting()) {
                                 Image(systemName:"ellipsis.circle")
                             }
-                                    .font(Font.custom("SF Pro Display", size: 30))
-                                    .foregroundColor(Color(red: 0.17, green: 0.26, blue: 0.36))
-                                    .offset(x: 158, y: -352.50)
-                                    .accessibilityLabel("Go to Settings")
+                            .font(Font.custom("SF Pro Display", size: 30))
+                            .foregroundColor(.blue11)
+                            .offset(x: 158, y: -352.50)
+                            .accessibilityLabel("Go to Settings")
                             
                         }
                         
                         HStack(spacing: 0) {
                             Text("Interval Control")
-                                .font(Font.custom("SF Compact", size: 24).bold())
-                                .foregroundColor(Color(red: 0.17, green: 0.26, blue: 0.36))
+                            //.bold()
+                                .font(.title)
+                               // .font(Color)
+                                .bold()
+                               // .foregroundColor(.white)
                                 .frame(width: 1050)
-                                .offset(x: 30)
+                                .offset(x: 45)
                         }
                         .frame(width: 104, height: 24)
                         .offset(x: -120.50, y: -291)
@@ -92,7 +95,7 @@ struct Home: View {
                         HStack(spacing: 0) {
                             Text("Start Journaling")
                                 .font(Font.custom("SF Compact", size: 24).bold())
-                                .foregroundColor(Color(red: 0.17, green: 0.26, blue: 0.36))
+                                //.foregroundColor(Color(red: 0.17, green: 0.26, blue: 0.36))
                                 .frame(width: 300)
                                 .offset(x: 40)
                         }
@@ -100,18 +103,18 @@ struct Home: View {
                         .offset(x: -129, y: 80.50)
                         ZStack() {
                             NavigationLink(destination: CreateEntry()) {
-                            Rectangle()
-                                .foregroundColor(.clear)
-                                .frame(width: 163, height: 100)
-                                .background(.white)
-                                .cornerRadius(8)
-                                .offset(x: 0, y: 0)
+                                Rectangle()
+                                    .foregroundColor(.clear)
+                                    .frame(width: 163, height: 100)
+                                    .background(Color(red: 0.95, green: 0.95, blue: 0.97))
+                                    .cornerRadius(8)
+                                    .offset(x: 0, y: 0)
                             }.buttonStyle(MainButton())
                             
-                                Text("Write Memo")
-                                    .font(Font.custom("SF Pro Display", size: 16))
-                                    .foregroundColor(Color(red: 0.17, green: 0.26, blue: 0.36))
-                                    .offset(x: 0, y: 19)
+                            Text("Write Memo")
+                                .font(Font.custom("SF Pro Display", size: 16))
+                                .foregroundColor(Color(red: 0.17, green: 0.26, blue: 0.36))
+                                .offset(x: 0, y: 19)
                         }
                         .frame(width: 163, height: 100)
                         .offset(x: -91, y: 276)
@@ -120,7 +123,7 @@ struct Home: View {
                             Rectangle()
                                 .foregroundColor(.clear)
                                 .frame(width: 163, height: 100)
-                                .background(.white)
+                                .background(Color(red: 0.95, green: 0.95, blue: 0.97))
                                 .cornerRadius(8)
                                 .offset(x: 0, y: 0)
                             Text("Record Memo")
@@ -135,7 +138,7 @@ struct Home: View {
                                 Rectangle()
                                     .foregroundColor(.clear)
                                     .frame(width: 345, height: 100)
-                                    .background(.white)
+                                    .background(Color(red: 0.95, green: 0.95, blue: 0.97))
                                     .cornerRadius(8)
                                     .offset(x: 0, y: 0)
                             }
@@ -181,7 +184,7 @@ struct Home: View {
                         }
                     }
                     .frame(width: 393, height: 852)
-                    .background(Color(red: 0.95, green: 0.95, blue: 0.97))//ZStack
+                    //   .background(Color(red: 0.95, green: 0.95, blue: 0.97))//ZStack
                     
                 }
                 .padding()

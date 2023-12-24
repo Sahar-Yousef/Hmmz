@@ -25,12 +25,15 @@ struct EntryDetail: View {
                         Text(entry.getDateString(date: entry.date))
                     }
                     .offset(y:-15)
+                    .bold()
+                    .font(.title2)
                 }
                 ScrollView{
                 Text(entry.desc)
                     .padding(25)
                     .frame(width: 400)
                     .offset(y:-20)
+                  //  .foregroundColor(.white)
             }
             // .navigationTitle(entry.title)
             // .navigationBarTitleDisplayMode(.automatic)

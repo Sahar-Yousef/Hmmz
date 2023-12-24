@@ -15,20 +15,18 @@ struct NoteGallery: View {
     
     var body: some View {
         VStack{
-            NavigationView {
-                VStack(alignment: .leading) {
                    
                     
                     // Entries
                     List{
                         ForEach(entryController.entries.reversed()) { section in
-                            NavigationLink( destination: EntryDetail(entry: section).navigationBarBackButtonHidden(true)){
+                            NavigationLink( destination: EntryDetail(entry: section)){
                                 EntryRow(item: section)
                             }
                         }
                         .onDelete(perform: deleteItems)
                         .padding([.top, .bottom], 5)
-                        .listRowBackground(Color.white)
+                       // .listRowBackground(Color.white)
                     }
                     .background(Color.white)
                     //.navigationTitle("Journal")
@@ -37,12 +35,11 @@ struct NoteGallery: View {
                         EditButton()
                     }
                 }
-            }
-            .background(Color.white)
+            
+          //  .background(Color.white)
         }
-        .padding()
-        .background(Color.white)
-    }
+       // .background(Color.white)
+    
     
     func deleteItems(at offsets: IndexSet) {
         entryController.entries.remove(atOffsets: offsets)

@@ -16,8 +16,9 @@ struct Home: View {
                     
                     ZStack() {
                         HStack(spacing: -44){
-                            
-                            Image(systemName:"calendar")
+                            NavigationLink(destination:NoteGallery()) {
+                                Image(systemName:"calendar")
+                            }
                                 .font(Font.custom("SF Pro Display", size: 30))
                                 .foregroundColor(Color(red: 0.17, green: 0.26, blue: 0.36))
                                 .offset(x: -160.50, y: -352.50)

@@ -10,6 +10,7 @@ import SwiftData
 
 @main
 struct HmmzApp: App {
+    @StateObject var entryController = EntryController();
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
@@ -28,7 +29,10 @@ struct HmmzApp: App {
     var body: some Scene {
         WindowGroup {
             Home()
+                .environmentObject(entryController)
+                
         }
         .modelContainer(sharedModelContainer)
+        
     }
 }

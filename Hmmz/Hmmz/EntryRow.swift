@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+
 struct EntryRow: View {
     let item: EntrySection
    // var myCustomColor = MyCustomColors()

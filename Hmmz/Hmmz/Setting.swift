@@ -1,3 +1,5 @@
+
+
 //
 //  Setting.swift
 //  Hmmz
@@ -82,4 +84,3 @@ struct SettingsView_Previews: PreviewProvider {
           //  .environmentObject(User(name: "Username"))
     }
 }
-

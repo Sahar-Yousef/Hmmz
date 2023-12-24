@@ -5,12 +5,6 @@
 //  Created by Muna Aiman Al-hajj on 11/06/1445 AH.
 //
 
-//
-//  ContentView.swift
-//  JournalApp
-//
-//  Created by Kathrine Heinzel on 20.12.21.
-//
 
 import SwiftUI
 

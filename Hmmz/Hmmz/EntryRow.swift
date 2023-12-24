@@ -62,4 +62,3 @@ struct EntryRow_Previews: PreviewProvider {
         EntryRow(item: EntrySection.example)
     }
 }
-

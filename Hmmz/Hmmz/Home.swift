@@ -1,3 +1,4 @@
+
 //
 //  ContentView.swift
 //  HMMZ refrence file
@@ -98,20 +99,19 @@ struct Home: View {
                         .frame(width: 87, height: 19)
                         .offset(x: -129, y: 80.50)
                         ZStack() {
-                            NavigationLink(destination: Setting()) {
-                                Rectangle()
-                                    .foregroundColor(.clear)
-                                    .frame(width: 163, height: 100)
-                                    .background(.white)
-                                    .cornerRadius(8)
-                                    .offset(x: 0, y: 0)
-                            
+                            NavigationLink(destination: CreateEntry()) {
+                            Rectangle()
+                                .foregroundColor(.clear)
+                                .frame(width: 163, height: 100)
+                                .background(.white)
+                                .cornerRadius(8)
+                                .offset(x: 0, y: 0)
                             }.buttonStyle(MainButton())
+                            
                                 Text("Write Memo")
                                     .font(Font.custom("SF Pro Display", size: 16))
                                     .foregroundColor(Color(red: 0.17, green: 0.26, blue: 0.36))
                                     .offset(x: 0, y: 19)
-                           
                         }
                         .frame(width: 163, height: 100)
                         .offset(x: -91, y: 276)
@@ -132,19 +132,17 @@ struct Home: View {
                         .offset(x: 91, y: 276)
                         ZStack() {
                             NavigationLink(destination: Camera()){
-                            Rectangle()
-                                .foregroundColor(.clear)
-                                .frame(width: 345, height: 100)
-                                .background(.white)
-                                .cornerRadius(8)
-                                .offset(x: 0, y: 0)
+                                Rectangle()
+                                    .foregroundColor(.clear)
+                                    .frame(width: 345, height: 100)
+                                    .background(.white)
+                                    .cornerRadius(8)
+                                    .offset(x: 0, y: 0)
                             }
-                            .buttonStyle(MainButton())
                             Text("Open Camera")
                                 .font(Font.custom("SF Pro Display", size: 16))
                                 .foregroundColor(Color(red: 0.17, green: 0.26, blue: 0.36))
                                 .offset(x: 0, y: 19)
-                            
                         }
                         .frame(width: 345, height: 100)
                         .offset(x: 0, y: 164)

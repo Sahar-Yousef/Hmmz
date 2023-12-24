@@ -1,3 +1,4 @@
+
 //
 //  EntryController.swift
 //  Hmmz
@@ -41,4 +42,3 @@ class EntryController: ObservableObject {
     }
     
 }
-

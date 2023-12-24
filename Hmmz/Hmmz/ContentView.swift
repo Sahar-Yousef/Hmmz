@@ -2,17 +2,29 @@
 //  ContentView.swift
 //  Hmmz
 //
-//  Created by Sahora on 24/12/2023.
+//  Created by Sahora on 19/12/2023.
 //
 
 import SwiftUI
 import SwiftData
 
-struct ContentView: View {
+struct ContentView: View  {
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]
+    @Query private var drafts: [Drafts]
+    @Query private var countintervals: [CountIntervals]
+
+    @State private var entredtext: String = ""
+    @State private var Count: Int = 0
+
+    @State private var CountText: String = ""
 
     var body: some View {
+        
+        
+       
+        
+    
         NavigationSplitView {
             List {
                 ForEach(items) { item in
@@ -24,6 +36,27 @@ struct ContentView: View {
                 }
                 .onDelete(perform: deleteItems)
             }
+            List {
+                ForEach(drafts) { draft in
+                    NavigationLink {
+                        Text("\(draft.draft))")
+                    } label: {
+                        Text("\(draft.draft))")
+                    }
+                }
+                .onDelete(perform: deleteItems)
+            }
+            List {
+                ForEach(countintervals) { countinterval in
+                    NavigationLink {
+                        Text("\(countinterval.countIntervals))")
+                    } label: {
+                        Text("\(countinterval.countIntervals))")
+                    }
+                }
+                .onDelete(perform: deleteItems)
+            }
+
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     EditButton()
@@ -37,12 +70,28 @@ struct ContentView: View {
         } detail: {
             Text("Select an item")
         }
+        VStack {
+            TextField("Enter text", text: $entredtext)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding()
+        }
+        
+        VStack {
+            TextField("Enter text", text: $CountText)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding()
+        }
+
     }
 
     private func addItem() {
         withAnimation {
             let newItem = Item(timestamp: Date())
+            let newNote = Drafts(timestamp: Date(), draft: entredtext)
+            let newCount = CountIntervals(timestamp: Date(), countIntervals: Count)
             modelContext.insert(newItem)
+            modelContext.insert(newNote)
+            modelContext.insert(newCount)
         }
     }
 
@@ -53,6 +102,10 @@ struct ContentView: View {
             }
         }
     }
+    
+
+    
+    
 }
 
 #Preview {

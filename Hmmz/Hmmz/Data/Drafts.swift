@@ -6,3 +6,16 @@
 //
 
 import Foundation
+import SwiftData
+
+@Model
+final class Drafts {
+    var timestamp: Date
+    var draft: String
+
+    init(timestamp: Date, draft: String) {
+        self.timestamp = timestamp
+        self.draft = draft
+    }
+    
+}

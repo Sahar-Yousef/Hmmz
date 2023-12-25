@@ -1,0 +1,200 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    "%@" : {
+
+    },
+    "Activate reminder" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تفعيل التنبيهات"
+          }
+        }
+      }
+    },
+    "Calculate Interval" : {
+
+    },
+    "Dec 19, 2023" : {
+
+    },
+    "⁠Embark on a journey to uncover the untapped potential between everyday moments! T" : {
+
+    },
+    "Go to Calendar" : {
+
+    },
+    "Go to Settings" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اذهب للإعدادات"
+          }
+        }
+      }
+    },
+    "Happy Journey" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تدوين سعيد"
+          }
+        }
+      }
+    },
+    "Interval Control" : {
+
+    },
+    "Mood:" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المزاج:"
+          }
+        }
+      }
+    },
+    "Open camera" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "افتح الكاميرا"
+          }
+        }
+      }
+    },
+    "Open Camera" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "افتح الكاميرا"
+          }
+        }
+      }
+    },
+    "Record Memo" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سجل مدونة صوتية"
+          }
+        }
+      }
+    },
+    "Remind me at" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ذكرني في"
+          }
+        }
+      }
+    },
+    "Request Permission" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "طلب الأذونات"
+          }
+        }
+      }
+    },
+    "Save" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حفظ"
+          }
+        }
+      }
+    },
+    "Schedule Reminder" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "جدولة تذكير"
+          }
+        }
+      }
+    },
+    "Start calculating interval" : {
+
+    },
+    "Start Journaling" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ابدأ التدوين"
+          }
+        }
+      }
+    },
+    "Stop calculating interval" : {
+
+    },
+    "There are %lld entries." : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يوجد عدد ٪lld مدخلات"
+          }
+        }
+      }
+    },
+    "Title" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الموضوع"
+          }
+        }
+      }
+    },
+    "Write Memo" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اكتب تدوينة"
+          }
+        }
+      }
+    },
+    "مرحبا" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مرحبا"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Welcome"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

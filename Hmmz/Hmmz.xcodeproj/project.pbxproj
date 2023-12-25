@@ -17,7 +17,6 @@
 		18DFA6C12B3831040037E83D /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DFA6C02B3831040037E83D /* Camera.swift */; };
 		18DFA6C32B395AE50037E83D /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 18DFA6C22B395AE50037E83D /* Localizable.xcstrings */; };
 		2867ABBC2B382188002D7313 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2867ABBB2B382188002D7313 /* Timer.swift */; };
-		2867ABBE2B3821D3002D7313 /* Memo Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2867ABBD2B3821D3002D7313 /* Memo Preview.swift */; };
 		35AB1DEA2B384C3F008BCDB0 /* NoteGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB1DE92B384C3F008BCDB0 /* NoteGallery.swift */; };
 		35AB1DEC2B384C68008BCDB0 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB1DEB2B384C68008BCDB0 /* EntryController.swift */; };
 		35AB1DEE2B384C8B008BCDB0 /* EntryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB1DED2B384C8B008BCDB0 /* EntryRow.swift */; };
@@ -26,6 +25,8 @@
 		35AB1DF42B384CDF008BCDB0 /* CreateEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB1DF32B384CDF008BCDB0 /* CreateEntry.swift */; };
 		35AB1DF62B384F65008BCDB0 /* StateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB1DF52B384F65008BCDB0 /* StateView.swift */; };
 		35D0E8242B38248200D46430 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D0E8232B38248200D46430 /* Setting.swift */; };
+		35E61AC32B396E7F00DDCF83 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E61AC22B396E7F00DDCF83 /* SplashScreen.swift */; };
+		35E61AC52B39718E00DDCF83 /* LocalNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E61AC42B39718E00DDCF83 /* LocalNotifications.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +41,6 @@
 		18DFA6C02B3831040037E83D /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 		18DFA6C22B395AE50037E83D /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		2867ABBB2B382188002D7313 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
-		2867ABBD2B3821D3002D7313 /* Memo Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Memo Preview.swift"; sourceTree = "<group>"; };
 		35AB1DE92B384C3F008BCDB0 /* NoteGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteGallery.swift; sourceTree = "<group>"; };
 		35AB1DEB2B384C68008BCDB0 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
 		35AB1DED2B384C8B008BCDB0 /* EntryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryRow.swift; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		35AB1DF32B384CDF008BCDB0 /* CreateEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEntry.swift; sourceTree = "<group>"; };
 		35AB1DF52B384F65008BCDB0 /* StateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateView.swift; sourceTree = "<group>"; };
 		35D0E8232B38248200D46430 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		35E61AC22B396E7F00DDCF83 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		35E61AC42B39718E00DDCF83 /* LocalNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotifications.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +86,9 @@
 				18DFA6BB2B382A430037E83D /* Data */,
 				2867ABBB2B382188002D7313 /* Timer.swift */,
 				189ED9AC2B381B820054E627 /* HmmzApp.swift */,
+				35E61AC22B396E7F00DDCF83 /* SplashScreen.swift */,
+				35E61AC42B39718E00DDCF83 /* LocalNotifications.swift */,
 				189ED9AE2B381B820054E627 /* Home.swift */,
-				2867ABBD2B3821D3002D7313 /* Memo Preview.swift */,
 				35D0E8232B38248200D46430 /* Setting.swift */,
 				18DFA6C02B3831040037E83D /* Camera.swift */,
 				35AB1DE92B384C3F008BCDB0 /* NoteGallery.swift */,
@@ -192,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35E61AC32B396E7F00DDCF83 /* SplashScreen.swift in Sources */,
 				35AB1DF22B384CC1008BCDB0 /* Entry.swift in Sources */,
 				18DFA6BF2B382ABB0037E83D /* CountIntervals.swift in Sources */,
 				35AB1DEC2B384C68008BCDB0 /* EntryController.swift in Sources */,
@@ -201,9 +205,9 @@
 				35AB1DF62B384F65008BCDB0 /* StateView.swift in Sources */,
 				35AB1DF42B384CDF008BCDB0 /* CreateEntry.swift in Sources */,
 				2867ABBC2B382188002D7313 /* Timer.swift in Sources */,
+				35E61AC52B39718E00DDCF83 /* LocalNotifications.swift in Sources */,
 				35AB1DEA2B384C3F008BCDB0 /* NoteGallery.swift in Sources */,
 				18DFA6BD2B382A920037E83D /* Drafts.swift in Sources */,
-				2867ABBE2B3821D3002D7313 /* Memo Preview.swift in Sources */,
 				35D0E8242B38248200D46430 /* Setting.swift in Sources */,
 				189ED9AD2B381B820054E627 /* HmmzApp.swift in Sources */,
 				18DFA6C12B3831040037E83D /* Camera.swift in Sources */,
@@ -341,7 +345,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hmmz/Preview Content\"";
-				DEVELOPMENT_TEAM = ZM4ARX928Z;
+				DEVELOPMENT_TEAM = DFQ2G36PPT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
@@ -371,7 +375,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hmmz/Preview Content\"";
-				DEVELOPMENT_TEAM = ZM4ARX928Z;
+				DEVELOPMENT_TEAM = DFQ2G36PPT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";

@@ -42,7 +42,7 @@ struct Home: View {
                                 .bold()
                                // .foregroundColor(.white)
                                 .frame(width: 1050)
-                                .offset(x: 45)
+                                .offset(x: 53)
                         }
                         .frame(width: 104, height: 24)
                         .offset(x: -120.50, y: -291)
@@ -94,10 +94,13 @@ struct Home: View {
                         
                         HStack(spacing: 0) {
                             Text("Start Journaling")
-                                .font(Font.custom("SF Compact", size: 24).bold())
-                                //.foregroundColor(Color(red: 0.17, green: 0.26, blue: 0.36))
-                                .frame(width: 300)
-                                .offset(x: 40)
+                            //.bold()
+                                .font(.title)
+                               // .font(Color)
+                                .bold()
+                               // .foregroundColor(.white)
+                                .frame(width: 1050)
+                                .offset(x: 65)
                         }
                         .frame(width: 87, height: 19)
                         .offset(x: -129, y: 80.50)
@@ -106,14 +109,14 @@ struct Home: View {
                                 Rectangle()
                                     .foregroundColor(.clear)
                                     .frame(width: 163, height: 100)
-                                    .background(Color(red: 0.95, green: 0.95, blue: 0.97))
+                                    .background(Color.babyblue)
                                     .cornerRadius(8)
                                     .offset(x: 0, y: 0)
                             }.buttonStyle(MainButton())
                             
                             Text("Write Memo")
                                 .font(Font.custom("SF Pro Display", size: 16))
-                                .foregroundColor(Color(red: 0.17, green: 0.26, blue: 0.36))
+                                .foregroundColor(Color.white)
                                 .offset(x: 0, y: 19)
                         }
                         .frame(width: 163, height: 100)
@@ -123,12 +126,12 @@ struct Home: View {
                             Rectangle()
                                 .foregroundColor(.clear)
                                 .frame(width: 163, height: 100)
-                                .background(Color(red: 0.95, green: 0.95, blue: 0.97))
+                                .background(Color.babyblue)
                                 .cornerRadius(8)
                                 .offset(x: 0, y: 0)
                             Text("Record Memo")
                                 .font(Font.custom("SF Pro Display", size: 16))
-                                .foregroundColor(Color(red: 0.17, green: 0.26, blue: 0.36))
+                                .foregroundColor(Color.white)
                                 .offset(x: 0, y: 19)
                         }
                         .frame(width: 163, height: 100)
@@ -138,13 +141,13 @@ struct Home: View {
                                 Rectangle()
                                     .foregroundColor(.clear)
                                     .frame(width: 345, height: 100)
-                                    .background(Color(red: 0.95, green: 0.95, blue: 0.97))
+                                    .background(Color.babyblue)
                                     .cornerRadius(8)
                                     .offset(x: 0, y: 0)
                             }
                             Text("Open Camera")
                                 .font(Font.custom("SF Pro Display", size: 16))
-                                .foregroundColor(Color(red: 0.17, green: 0.26, blue: 0.36))
+                                .foregroundColor(Color.white)
                                 .offset(x: 0, y: 19)
                         }
                         .frame(width: 345, height: 100)
@@ -171,15 +174,15 @@ struct Home: View {
                              .offset(x: 3, y: -166)*/
                             Image(systemName:"camera")
                                 .font(Font.custom("SF Pro Display", size: 24))
-                                .foregroundColor(Color(red: 0.17, green: 0.26, blue: 0.36))
+                                .foregroundColor(Color.white)
                                 .offset(x: 0, y: 146.50)
                             Image(systemName:"waveform")
                                 .font(Font.custom("SF Pro Display", size: 24))
-                                .foregroundColor(Color(red: 0.17, green: 0.26, blue: 0.36))
+                                .foregroundColor(Color.white)
                                 .offset(x: 91.50, y: 262.50)
                             Image(systemName:"note.text")
                                 .font(Font.custom("SF Pro Display", size: 24))
-                                .foregroundColor(Color(red: 0.17, green: 0.26, blue: 0.36))
+                                .foregroundColor(Color.white)
                                 .offset(x: -90.50, y: 262.50)
                         }
                     }

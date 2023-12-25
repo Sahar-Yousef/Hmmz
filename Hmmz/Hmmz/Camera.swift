@@ -13,11 +13,13 @@ struct Camera: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
             } else {
-               EmptyView()
+               Home()
+                    .navigationBarBackButtonHidden(true)
             }
         }
         .sheet(isPresented: $isShowingCamera) {
             CameraView(capturedImage: $capturedImage)
+                
         }
         .onAppear {
             isShowingCamera = true

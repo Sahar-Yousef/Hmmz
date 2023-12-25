@@ -18,7 +18,14 @@
       }
     },
     "Calculate Interval" : {
-
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حساب الأوقات الحرة"
+          }
+        }
+      }
     },
     "Dec 19, 2023" : {
 
@@ -57,7 +64,14 @@
       }
     },
     "Interval Control" : {
-
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التحكم بلأوقات الحرة"
+          }
+        }
+      }
     },
     "Mood:" : {
       "localizations" : {
@@ -140,7 +154,14 @@
       }
     },
     "Start calculating interval" : {
-
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ابدأ بعد الوقت الحرة"
+          }
+        }
+      }
     },
     "Start Journaling" : {
       "localizations" : {
@@ -153,7 +174,14 @@
       }
     },
     "Stop calculating interval" : {
-
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "وقف عد الوقت الحرة"
+          }
+        }
+      }
     },
     "There are %lld entries." : {
       "localizations" : {

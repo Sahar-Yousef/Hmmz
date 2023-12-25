@@ -11,9 +11,9 @@ import SwiftData
 @Model
 final class CountIntervals {
     var timestamp: Date
-    var countIntervals: Int
+    var countIntervals: Double
 
-    init(timestamp: Date, countIntervals : Int ) {
+    init(timestamp: Date, countIntervals : Double ) {
         self.timestamp = timestamp
         self.countIntervals = countIntervals
     }

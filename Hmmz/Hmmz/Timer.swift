@@ -6,8 +6,11 @@
 //
 
 import Foundation
+import SwiftData
+
 class StopwatchViewModel: ObservableObject {
     
+ //   @Environment(\.modelContext) private var modelContext
     // MARK: - Properties
     
     // Timer object to track elapsed time
@@ -43,5 +46,11 @@ class StopwatchViewModel: ObservableObject {
         
         // Return the formatted time
         return String(format: "%02d:%02d:%02d", hours, minutes, seconds)
+        
+        //Add to SwiftDaata
+        var CountInterval = CountIntervals(timestamp: Date(), countIntervals: elapsedTime)
+        modelContext.insert(CountInterval)
+        
     }
 }
+

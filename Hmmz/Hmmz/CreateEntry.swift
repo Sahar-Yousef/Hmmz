@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct CreateEntry: View {
+    @Environment(\.modelContext) private var modelContext
+    
     @EnvironmentObject var entryController: EntryController
     @Environment(\.presentationMode) var presentationMode
     
@@ -35,6 +37,13 @@ struct CreateEntry: View {
                     TextEditor(text: $desc)
                        // .foregroundColor(.black)
                         .frame(height: 200)
+                    
+                        //Add TO SwiftData
+                        var TextJournal = Drafts(timestamp: Date(), title: title, mood: mood, draft: desc)
+                   // modelContext.insert(TextJournal)
+                    
+                    
+                    
                 }
                     Section {
                         Button(

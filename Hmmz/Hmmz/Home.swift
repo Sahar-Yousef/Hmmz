@@ -18,12 +18,12 @@ struct Home: View {
                     ZStack() {
                         HStack(spacing: -44){
                             NavigationLink(destination:NoteGallery()) {
-                                Image(systemName:"calendar")
+                                Image(systemName:"book")
                             }
                             .font(Font.custom("SF Pro Display", size: 30))
                             .foregroundColor(.blue11)
                             .offset(x: -160.50, y: -352.50)
-                            .accessibilityLabel("Go to Calendar")
+                            .accessibilityLabel("Go to Journals")
                             NavigationLink(destination: Setting()) {
                                 Image(systemName:"ellipsis.circle")
                             }

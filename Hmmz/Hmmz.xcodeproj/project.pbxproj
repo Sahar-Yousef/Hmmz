@@ -85,7 +85,6 @@
 				2867ABBB2B382188002D7313 /* Timer.swift */,
 				189ED9AC2B381B820054E627 /* HmmzApp.swift */,
 				189ED9AE2B381B820054E627 /* Home.swift */,
-				189ED9B02B381B820054E627 /* Item.swift */,
 				2867ABBD2B3821D3002D7313 /* Memo Preview.swift */,
 				35D0E8232B38248200D46430 /* Setting.swift */,
 				18DFA6C02B3831040037E83D /* Camera.swift */,
@@ -116,6 +115,7 @@
 				18DFA6BC2B382A920037E83D /* Drafts.swift */,
 				18DFA6BE2B382ABB0037E83D /* CountIntervals.swift */,
 				18DFA6C22B395AE50037E83D /* Localizable.xcstrings */,
+				189ED9B02B381B820054E627 /* Item.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";

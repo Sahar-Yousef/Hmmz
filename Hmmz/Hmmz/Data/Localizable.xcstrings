@@ -26,8 +26,15 @@
     "⁠Embark on a journey to uncover the untapped potential between everyday moments! T" : {
 
     },
-    "Go to Calendar" : {
-
+    "Go to Journals" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اذهب للمدونات"
+          }
+        }
+      }
     },
     "Go to Settings" : {
       "localizations" : {

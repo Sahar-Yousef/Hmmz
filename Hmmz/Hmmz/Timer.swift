@@ -49,7 +49,7 @@ class StopwatchViewModel: ObservableObject {
         
         //Add to SwiftDaata
         var CountInterval = CountIntervals(timestamp: Date(), countIntervals: elapsedTime)
-        modelContext.insert(CountInterval)
+     //   modelContext.insert(CountInterval)
         
     }
 }
